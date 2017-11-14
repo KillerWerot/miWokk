@@ -16,7 +16,7 @@ public class NumbersActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numbers);
 
-        ArrayList<String> numbers = new ArrayList<>();
+        ArrayList<Word> numbers = new ArrayList<Word>();
         numbers.add("one");
         numbers.add("two");
         numbers.add("three");
@@ -28,9 +28,8 @@ public class NumbersActivity extends AppCompatActivity {
         numbers.add("nine");
         numbers.add("ten");
 
-        LinearLayout rootView = (LinearLayout) findViewById(R.id.rootView);
 
-        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, numbers);
+        WordAdapter<Word> itemsAdapter = new Word<Word>(this, R.layout.list_item, numbers);
 
         ListView listView = (ListView) findViewById(R.id.list);
 
