@@ -17,23 +17,23 @@ public class NumbersActivity extends AppCompatActivity {
         setContentView(R.layout.activity_numbers);
 
         ArrayList<Word> numbers = new ArrayList<Word>();
-        numbers.add("one");
-        numbers.add("two");
-        numbers.add("three");
-        numbers.add("four");
-        numbers.add("five");
-        numbers.add("six");
-        numbers.add("seven");
-        numbers.add("eight");
-        numbers.add("nine");
-        numbers.add("ten");
+        numbers.add(new Word("one", "lutti"));
+        numbers.add(new Word("two", "ottiko"));
+        numbers.add(new Word("three", "tolookosu"));
+        numbers.add(new Word("four", "oyyisa"));
+        numbers.add(new Word("five", "massokka"));
+        numbers.add(new Word("six", "temmokka"));
+        numbers.add(new Word("seven", "kenekaku"));
+        numbers.add(new Word("eight", "kawinta"));
+        numbers.add(new Word("nine", "wo'e"));
+        numbers.add(new Word("ten", "na'aacha"));
 
 
-        WordAdapter<Word> itemsAdapter = new Word<Word>(this, R.layout.list_item, numbers);
+        WordAdapter adapter = new WordAdapter(this, numbers);
 
         ListView listView = (ListView) findViewById(R.id.list);
 
-        listView.setAdapter(itemsAdapter);
+        listView.setAdapter(adapter);
         }
 
     }
