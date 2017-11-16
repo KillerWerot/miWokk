@@ -14,16 +14,14 @@ public class ColorsActivity extends AppCompatActivity {
         setContentView(R.layout.words_list);
 
         ArrayList<Word> colors = new ArrayList<Word>();
-        colors.add(new Word("Where are you going?", "minto wuksus"));
-        colors.add(new Word("What is your name?", "tinnә oyaase'nә"));
-        colors.add(new Word("My name is...", "oyaaset..."));
-        colors.add(new Word("How are you feeling?","michәksәs?"));
-        colors.add(new Word("I’m feeling good.",  "kuchi achit"));
-        colors.add(new Word("Are you coming?", "әәnәs'aa?"));
-        colors.add(new Word("Yes, I’m coming.", "hәә’ әәnәm"));
-        colors.add(new Word("I’m coming.", "әәnәm"));
-        colors.add(new Word("Let’s go.", "yoowutis"));
-        colors.add(new Word("Come here.", "әnni'nem"));
+        colors.add(new Word("Where are you going?", "minto wuksus", R.drawable.color_black));
+        colors.add(new Word("What is your name?", "tinnә oyaase'nә",R.drawable.color_brown));
+        colors.add(new Word("My name is...", "oyaaset...",R.drawable.color_dusty_yellow));
+        colors.add(new Word("How are you feeling?","michәksәs?",R.drawable.color_gray));
+        colors.add(new Word("I’m feeling good.",  "kuchi achit",R.drawable.color_green));
+        colors.add(new Word("Are you coming?", "әәnәs'aa?",R.drawable.color_mustard_yellow));
+        colors.add(new Word("Yes, I’m coming.", "hәә’ әәnәm",R.drawable.color_red));
+        colors.add(new Word("I’m coming.", "әәnәm",R.drawable.color_white));
 
 
         WordAdapter phrasesAdapter = new WordAdapter(this, colors);
