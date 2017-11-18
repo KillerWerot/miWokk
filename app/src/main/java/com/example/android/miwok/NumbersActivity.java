@@ -21,7 +21,6 @@ public class NumbersActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.words_list);
 
-
         ListView lista = (ListView) findViewById(R.id.list);
         lista.setBackgroundResource(R.color.category_numbers);
 
