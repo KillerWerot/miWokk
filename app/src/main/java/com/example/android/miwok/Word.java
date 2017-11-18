@@ -13,6 +13,7 @@ public class Word {
     private int mAudioResource;
 
 
+
     public Word(String defaultTranslation, String miwokTranslation, int audioResource ){
         mDefaultTranslation=defaultTranslation;
         mMiwokTranslation = miwokTranslation;
